@@ -1,7 +1,5 @@
 # Event Manager Application
 
-> Source code for the "Build your first Firebase powered Ionic app".
-
 The Event Manager app is the showcased app in the free course: **Build your
 first Firebase powered Ionic app** which covers:
 
@@ -12,7 +10,7 @@ first Firebase powered Ionic app** which covers:
 * Firebase Security Rules.
 * ...and more.
 
-![Screenshot of the Event Manager App](banner.png)
+![Screenshot of the Event Manager App](https://javebratt.com/wp-content/uploads/2017/12/banner.png)
 
 ## Installation
 
@@ -36,8 +34,8 @@ Inside that file you'll add your Firebase keys which you can get from
 
 ## Usage example
 
-To find out how to use it and how it was build, [download the
-course][https://javebratt.com/firebase-free-course/?ref=githubrepo].
+To find out how to use it and how it was build,
+[download the course](https://javebratt.com/firebase-free-course/?ref=githubrepo).
 
 ## Who am I?
 
