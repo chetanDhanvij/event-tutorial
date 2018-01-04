@@ -1,10 +1,12 @@
 import { Injectable } from '@angular/core';
 import firebase from 'firebase';
+import { User, AuthCredential } from '@firebase/auth-types';
+import { Reference } from '@firebase/database-types';
 
 @Injectable()
 export class ProfileProvider {
-  userProfile: firebase.database.Reference;
-  currentUser: firebase.User;
+  userProfile: Reference;
+  currentUser: User;
 
   constructor() {
     firebase.auth().onAuthStateChanged(user => {
@@ -15,7 +17,7 @@ export class ProfileProvider {
     });
   }
 
-  getUserProfile(): firebase.database.Reference {
+  getUserProfile(): Reference {
     return this.userProfile;
   }
 
@@ -28,7 +30,7 @@ export class ProfileProvider {
   }
 
   updateEmail(newEmail: string, password: string): Promise<any> {
-    const credential: firebase.auth.AuthCredential = firebase.auth.EmailAuthProvider.credential(
+    const credential: AuthCredential = firebase.auth.EmailAuthProvider.credential(
       this.currentUser.email,
       password
     );
@@ -45,7 +47,7 @@ export class ProfileProvider {
   }
 
   updatePassword(newPassword: string, oldPassword: string): Promise<any> {
-    const credential: firebase.auth.AuthCredential = firebase.auth.EmailAuthProvider.credential(
+    const credential: AuthCredential = firebase.auth.EmailAuthProvider.credential(
       this.currentUser.email,
       oldPassword
     );
