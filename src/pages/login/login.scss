@@ -1,23 +1,20 @@
 page-login {
-  form {
-    margin-bottom: 32px;
-    button {
-      margin-top: 20px !important;
+  ion-content{
+    section{
+      position: fixed;
+      bottom: 184px;
+      padding: 10%;
+      background: rgba(0, 0, 0, 0.7);
+      width: 100%;
     }
+    ion-item{
+      background: transparent !important;
+    }
+    background: url(../assets/img/background/evening.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
-
-  p {
-    font-size: 0.8em;
-    color: #d2d2d2;
-  }
-
-  ion-label {
-    margin-left: 5px;
-  }
-
-  ion-input {
-    padding: 5px;
-  }
+  
 
   .invalid {
     border-bottom: 1px solid #ff6153;
